@@ -1,0 +1,23 @@
+{
+  "category": "Business",
+  "prompts": [
+    {
+      "id": "business-plan",
+      "title": "Complete Business Plan Generator",
+      "price": "$4.99",
+      "prompt": "Create a comprehensive business plan for [BUSINESS IDEA] including: 1) Executive Summary, 2) Market Analysis with competitor research, 3) Marketing Strategy with channels and budget, 4) Financial Projections (3-year), 5) Operations Plan, 6) Risk Assessment, 7) Funding Requirements"
+    },
+    {
+      "id": "email-sequence",
+      "title": "High-Converting Email Sequence",
+      "price": "$3.99",
+      "prompt": "Write a 7-email sequence for [PRODUCT/SERVICE] targeting [AUDIENCE]. Each email should: 1) Have a compelling subject line, 2) Personal opening, 3) Value-focused body, 4) Clear CTA, 5) P.S. line. Include send schedule."
+    },
+    {
+      "id": "startup-pitch",
+      "title": "Investor Pitch Deck Generator",
+      "price": "$5.99",
+      "prompt": "Create a 10-slide pitch deck for [STARTUP] including: 1) Problem, 2) Solution, 3) Market Size (TAM/SAM/SOM), 4) Business Model, 5) Traction, 6) Competition Matrix, 7) Team, 8) Financials, 9) Ask, 10) Vision"
+    }
+  ]
+}
