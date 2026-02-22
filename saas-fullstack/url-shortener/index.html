@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkSnap - URL Shortener</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-900 text-white min-h-screen">
+    <div class="max-w-2xl mx-auto p-8">
+        <h1 class="text-4xl font-bold mb-2">LinkSnap</h1>
+        <p class="text-zinc-400 mb-8">Fast, free URL shortener</p>
+        
+        <div class="flex gap-2 mb-4">
+            <input id="url" type="url" placeholder="Paste your long URL..." 
+                class="flex-1 px-4 py-3 bg-zinc-800 rounded-lg border border-zinc-700 focus:border-blue-500 outline-none">
+            <button onclick="shorten()" class="px-6 py-3 bg-blue-600 rounded-lg font-semibold hover:bg-blue-700">Shorten</button>
+        </div>
+        
+        <div id="result" class="hidden bg-zinc-800 p-4 rounded-lg">
+            <p class="text-zinc-400 mb-2">Your short link:</p>
+            <div class="flex gap-2">
+                <input id="shortUrl" readonly class="flex-1 px-4 py-2 bg-zinc-700 rounded">
+                <button onclick="copy()" class="px-4 py-2 bg-zinc-600 rounded hover:bg-zinc-500">Copy</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const links = JSON.parse(localStorage.getItem('links') || '{}');
+        
+        function shorten() {
+            const url = document.getElementById('url').value;
+            if (!url) return;
+            
+            const code = Math.random().toString(36).substring(2, 8);
+            links[code] = url;
+            localStorage.setItem('links', JSON.stringify(links));
+            
+            const shortUrl = window.location.origin + '/' + code;
+            document.getElementById('shortUrl').value = shortUrl;
+            document.getElementById('result').classList.remove('hidden');
+        }
+        
+        function copy() {
+            navigator.clipboard.writeText(document.getElementById('shortUrl').value);
+        }
+    </script>
+</body>
+</html>
