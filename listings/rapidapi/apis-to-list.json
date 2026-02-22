@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Crypto Price Tracker Pro",
+    "description": "Real-time cryptocurrency prices for 100+ coins with 24h change, market cap, and volume. Supports USD, GBP, EUR.",
+    "category": "Cryptocurrency",
+    "endpoint": "https://hasanr.zo.space/api/crypto/top100",
+    "pricing": {
+      "free": "100 requests/day",
+      "basic": "$4.99/month - 10,000 requests",
+      "pro": "$9.99/month - 100,000 requests",
+      "ultra": "$29.99/month - unlimited"
+    },
+    "competitors_price": "$10-50/month",
+    "our_advantage": "50% cheaper, cleaner data, GBP support"
+  },
+  {
+    "name": "Bitcoin Price Live",
+    "description": "Real-time Bitcoin price in USD, GBP, EUR with 24h change percentage.",
+    "category": "Cryptocurrency",
+    "endpoint": "https://hasanr.zo.space/api/crypto/bitcoin",
+    "pricing": {
+      "free": "500 requests/day",
+      "pro": "$2.99/month - unlimited"
+    }
+  },
+  {
+    "name": "Ethereum Price Live",
+    "description": "Real-time Ethereum price with multi-currency support.",
+    "category": "Cryptocurrency",
+    "endpoint": "https://hasanr.zo.space/api/crypto/ethereum",
+    "pricing": {
+      "free": "500 requests/day",
+      "pro": "$2.99/month - unlimited"
+    }
+  },
+  {
+    "name": "Forex Exchange Rates",
+    "description": "Real-time forex rates for 150+ currencies. Base currency conversion.",
+    "category": "Finance",
+    "endpoint": "https://hasanr.zo.space/api/finance/forex",
+    "pricing": {
+      "free": "100 requests/day",
+      "pro": "$4.99/month - unlimited"
+    },
+    "competitors_price": "$5-20/month",
+    "our_advantage": "Same quality, lower price"
+  },
+  {
+    "name": "Stock Quote API",
+    "description": "Real-time stock quotes for NYSE/NASDAQ. Price, change, volume.",
+    "category": "Finance",
+    "endpoint": "https://hasanr.zo.space/api/finance/stock",
+    "pricing": {
+      "free": "50 requests/day",
+      "pro": "$9.99/month - unlimited"
+    }
+  },
+  {
+    "name": "AI Prompt Library",
+    "description": "100+ expert-crafted AI prompts for business, coding, writing, crypto.",
+    "category": "AI/ML",
+    "endpoint": "https://hasanr.zo.space/api/ai/prompts",
+    "pricing": {
+      "free": "20 prompts visible",
+      "pro": "$4.99/month - full access"
+    }
+  }
+]

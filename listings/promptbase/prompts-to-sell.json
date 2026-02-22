@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Ultimate Business Plan Generator",
+    "model": "ChatGPT",
+    "category": "Business",
+    "price": "$3.99",
+    "prompt": "Create a comprehensive business plan for [BUSINESS NAME] in the [INDUSTRY] sector. Include:\n\n1. Executive Summary (2-3 paragraphs)\n2. Company Description\n3. Market Analysis (TAM, SAM, SOM)\n4. Competitive Landscape (3x3 matrix)\n5. Product/Service Description\n6. Marketing Strategy (4Ps)\n7. Financial Projections (3-year)\n8. Team Structure\n9. Risk Analysis\n10. Funding Requirements\n\nFormat as a professional document ready for investors."
+  },
+  {
+    "title": "Crypto Trading Strategy Builder",
+    "model": "ChatGPT",
+    "category": "Finance",
+    "price": "$4.99",
+    "prompt": "Design a trading strategy for [CRYPTO/PAIR] with:\n\n1. Market Analysis (trend, volume, sentiment)\n2. Entry Criteria (3 specific triggers)\n3. Exit Criteria (take-profit levels)\n4. Stop-Loss Strategy\n5. Position Sizing (risk %)\n6. Time Frame\n7. Technical Indicators (RSI, MACD, etc)\n8. Risk Management Rules\n9. Backtesting Parameters\n10. Paper Trading Plan\n\nInclude specific numbers and percentages."
+  },
+  {
+    "title": "Viral TikTok Script Generator",
+    "model": "ChatGPT",
+    "category": "Social Media",
+    "price": "$2.99",
+    "prompt": "Create a viral TikTok script for [NICHE/TOPIC] that:\n\n1. Hook (first 1 second - shocking statement)\n2. Problem identification (2-3 seconds)\n3. Story/Value (10-15 seconds)\n4. CTA (last 2 seconds)\n\nInclude:\n- Exact timestamps\n- On-screen text suggestions\n- Music/audio recommendations\n- Hashtag strategy (5-10 tags)\n- Best posting time\n- Engagement predictions\n\nMake it punchy, relatable, and shareable."
+  },
+  {
+    "title": "YouTube Thumbnail Description",
+    "model": "Midjourney",
+    "category": "YouTube",
+    "price": "$1.99",
+    "prompt": "YouTube thumbnail for [VIDEO TOPIC], extreme close-up face with [EMOTION] expression, bold text overlay '[MAIN TEXT]', vibrant [COLOR] background, professional lighting, 16:9 ratio, eye-catching, high contrast, trending style --ar 16:9 --v 6"
+  },
+  {
+    "title": "Email Marketing Sequence (7 Emails)",
+    "model": "ChatGPT",
+    "category": "Marketing",
+    "price": "$5.99",
+    "prompt": "Write a 7-email marketing sequence for [PRODUCT] targeting [AUDIENCE].\n\nEach email includes:\n- Subject line (A/B test options)\n- Preview text\n- Opening hook\n- Body copy (short, scannable)\n- CTA button text\n- P.S. line\n\nEmail flow:\n1. Welcome + Value\n2. Problem awareness\n3. Solution intro\n4. Social proof\n5. Objection handling\n6. Urgency/scarcity\n7. Final offer\n\nTone: [PROFESSIONAL/CASUAL/FRIENDLY]"
+  },
+  {
+    "title": "SaaS Landing Page Copy",
+    "model": "ChatGPT",
+    "category": "Copywriting",
+    "price": "$4.99",
+    "prompt": "Write landing page copy for [SAAS PRODUCT] that converts.\n\nSections:\n1. Hero Headline (one powerful line)\n2. Subheadline (benefit-focused)\n3. Problem Statement (3 bullet points)\n4. Solution Overview\n5. Features → Benefits (6 items)\n6. Social Proof Section\n7. Pricing Table Copy\n8. FAQ Section (5 questions)\n9. Final CTA\n\nUse power words, scarcity, and social proof throughout."
+  },
+  {
+    "title": "Neon Cyberpunk Portrait",
+    "model": "Midjourney",
+    "category": "Art",
+    "price": "$2.99",
+    "prompt": "Cyberpunk portrait of [SUBJECT], neon pink and blue lighting, futuristic city background, rain reflections, cinematic composition, detailed face, glowing eyes, cybernetic enhancements, blade runner style, 8k ultra detailed --ar 2:3 --v 6 --style raw"
+  },
+  {
+    "title": "DeFi Yield Farming Analyzer",
+    "model": "ChatGPT",
+    "category": "Crypto",
+    "price": "$3.99",
+    "prompt": "Analyze yield farming opportunity for [TOKEN/POOL]:\n\n1. APY Calculation (real vs advertised)\n2. TVL Analysis\n3. Impermanent Loss Risk (0-100 score)\n4. Smart Contract Risk Assessment\n5. Token Utility & Tokenomics\n6. Team Background Check\n7. Audit Status\n8. Entry/Exit Strategy\n9. Diversification Recommendation\n10. Risk/Reward Score (1-10)\n\nProvide specific numbers and actionable advice."
+  },
+  {
+    "title": "Instagram Reel Script + Caption",
+    "model": "ChatGPT",
+    "category": "Social Media",
+    "price": "$2.49",
+    "prompt": "Create an Instagram Reel for [NICHE]:\n\nVIDEO SCRIPT:\n- Hook (0-1s): [shocking visual/statement]\n- Content (1-15s): [main value]\n- CTA (15-17s): [engagement driver]\n\nCAPTION:\n- Opening line (stops the scroll)\n- Value/content (bullet points)\n- CTA (question or action)\n- Hashtags (30 relevant tags)\n\nAUDIO: Trending sound suggestion\n\nBest posting time: [based on niche]"
+  },
+  {
+    "title": "Startup Pitch Deck Outline",
+    "model": "ChatGPT",
+    "category": "Business",
+    "price": "$3.99",
+    "prompt": "Create a pitch deck outline for [STARTUP]:\n\nSlide 1: Title + Tagline\nSlide 2: The Problem (pain points)\nSlide 3: The Solution (your product)\nSlide 4: Market Size (TAM/SAM/SOM)\nSlide 5: Business Model\nSlide 6: Traction (metrics)\nSlide 7: Competition (differentiation)\nSlide 8: Go-to-Market Strategy\nSlide 9: Team\nSlide 10: Financial Projections\nSlide 11: The Ask (funding)\nSlide 12: Contact\n\nInclude key points and visuals for each slide."
+  }
+]
