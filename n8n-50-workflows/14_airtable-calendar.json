@@ -1,0 +1,1 @@
+{"name":"Airtable to Google Calendar","trigger":"Airtable","actions":["Google Calendar"],"description":"Sync Airtable events to Google Calendar","price":"$6","nodes":[{"type":"Airtable Trigger","parameters":{"table":"Events"}},{"type":"Google Calendar","parameters":{"summary":"{{$json.title}}","start":"{{$json.date}}"}},{"type":"Filter","parameters":{"status":"confirmed"}}]}

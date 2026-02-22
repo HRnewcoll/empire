@@ -1,0 +1,1 @@
+{"name":"Instagram to Pinterest","trigger":"Instagram","actions":["Pinterest"],"description":"Auto-post Instagram posts to Pinterest","price":"$6","nodes":[{"type":"Instagram Trigger","parameters":{"userId":"YOUR_USER_ID"}},{"type":"Pinterest","parameters":{"board":"Your Board","image":"{{$json.media_url}}","description":"{{$json.caption}}"}}]}

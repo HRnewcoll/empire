@@ -1,0 +1,27 @@
+{
+  "name": "RSS to Email Newsletter",
+  "trigger": "RSS Feed",
+  "actions": ["Gmail", "Mailchimp"],
+  "description": "Aggregate RSS feeds and send weekly newsletter",
+  "price": "$12",
+  "nodes": [
+    {
+      "type": "RSS Feed Read",
+      "parameters": {
+        "url": "YOUR_RSS_URL"
+      }
+    },
+    {
+      "type": "Schedule",
+      "parameters": {
+        "rule": "0 9 * * 1"
+      }
+    },
+    {
+      "type": "Mailchimp",
+      "parameters": {
+        "campaign": "Weekly Digest"
+      }
+    }
+  ]
+}

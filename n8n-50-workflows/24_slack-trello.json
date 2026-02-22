@@ -1,0 +1,1 @@
+{"name":"slack trello","trigger":"Auto","actions":["Various"],"description":"Create Trello cards from Slack messages","price":"$5"}

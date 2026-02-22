@@ -1,0 +1,1 @@
+{"name":"GitHub to Discord Deploy","trigger":"GitHub","actions":["Discord"],"description":"Notify Discord on GitHub deployments","price":"$4","nodes":[{"type":"GitHub Trigger","parameters":{"event":"deployment"}},{"type":"Discord","parameters":{"webhook":"YOUR_WEBHOOK","message":"Deployed: {{$json.repository}} - {{$json.environment}}"}}]}

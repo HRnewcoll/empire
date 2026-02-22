@@ -1,0 +1,1 @@
+{"name":"google alerts slack","trigger":"Auto","actions":["Various"],"description":"Forward Google Alerts to Slack channel","price":"$4"}

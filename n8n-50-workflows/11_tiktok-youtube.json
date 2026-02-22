@@ -1,0 +1,1 @@
+{"name":"TikTok to YouTube Shorts","trigger":"TikTok","actions":["YouTube"],"description":"Cross-post TikTok videos to YouTube Shorts","price":"$8","nodes":[{"type":"TikTok Trigger","parameters":{"username":"YOUR_USERNAME"}},{"type":"YouTube","parameters":{"privacy":"public","title":"Shorts: {{$json.title}}"}}]}

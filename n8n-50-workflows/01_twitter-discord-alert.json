@@ -1,0 +1,23 @@
+{
+  "name": "Twitter to Discord Alert",
+  "trigger": "Twitter",
+  "actions": ["Discord"],
+  "description": "Monitor Twitter keywords and send alerts to Discord",
+  "price": "$5",
+  "nodes": [
+    {
+      "type": "Twitter Trigger",
+      "parameters": {
+        "search": "#keyword",
+        "pollInterval": 300
+      }
+    },
+    {
+      "type": "Discord",
+      "parameters": {
+        "webhook": "YOUR_WEBHOOK_URL",
+        "message": "New tweet found: {{$json.text}}"
+      }
+    }
+  ]
+}

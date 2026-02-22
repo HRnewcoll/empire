@@ -1,0 +1,1 @@
+{"name":"aws pagerduty","trigger":"Auto","actions":["Various"],"description":"Send AWS alerts to PagerDuty","price":"$8"}

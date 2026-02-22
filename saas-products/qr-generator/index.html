@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <div class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-center mb-8">QR Code Generator Pro</h1>
+        
+        <div class="max-w-md mx-auto bg-gray-800 rounded-lg p-6">
+            <input type="text" id="url" placeholder="Enter URL or text" 
+                   class="w-full p-3 bg-gray-700 rounded mb-4">
+            
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <input type="color" id="fgColor" value="#000000" class="h-12">
+                <input type="color" id="bgColor" value="#FFFFFF" class="h-12">
+            </div>
+            
+            <button onclick="generateQR()" 
+                    class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded font-bold">
+                Generate QR Code
+            </button>
+            
+            <div id="qrcode" class="mt-6 flex justify-center"></div>
+            
+            <button onclick="downloadQR()" id="downloadBtn" style="display:none"
+                    class="w-full bg-green-600 hover:bg-green-700 p-3 rounded font-bold mt-4">
+                Download PNG
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        let qrcode;
+        function generateQR() {
+            const url = document.getElementById('url').value;
+            if (!url) return alert('Please enter a URL or text');
+            
+            document.getElementById('qrcode').innerHTML = '';
+            qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: url,
+                width: 256,
+                height: 256,
+                colorDark: document.getElementById('fgColor').value,
+                colorLight: document.getElementById('bgColor').value
+            });
+            document.getElementById('downloadBtn').style.display = 'block';
+        }
+        
+        function downloadQR() {
+            const canvas = document.querySelector('#qrcode canvas');
+            const link = document.createElement('a');
+            link.download = 'qrcode.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+    </script>
+</body>
+</html>

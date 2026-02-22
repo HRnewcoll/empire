@@ -1,0 +1,1 @@
+{"name":"intercom slack","trigger":"Auto","actions":["Various"],"description":"Forward Intercom messages to Slack","price":"$5"}

@@ -1,0 +1,27 @@
+{
+  "name": "Gmail to Notion Logger",
+  "trigger": "Gmail",
+  "actions": ["Notion"],
+  "description": "Log important emails to Notion database",
+  "price": "$7",
+  "nodes": [
+    {
+      "type": "Gmail Trigger",
+      "parameters": {
+        "label": "Important",
+        "pollInterval": 300
+      }
+    },
+    {
+      "type": "Notion",
+      "parameters": {
+        "database": "YOUR_DATABASE_ID",
+        "properties": {
+          "Subject": "{{$json.subject}}",
+          "From": "{{$json.from}}",
+          "Date": "{{$json.date}}"
+        }
+      }
+    }
+  ]
+}

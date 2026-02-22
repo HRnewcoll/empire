@@ -1,0 +1,1 @@
+{"name":"LinkedIn Lead Scraper","trigger":"Schedule","actions":["LinkedIn","Airtable"],"description":"Scrape LinkedIn leads and save to Airtable","price":"$12","nodes":[{"type":"Schedule","parameters":{"rule":"0 10 * * *"}},{"type":"HTTP Request","parameters":{"url":"LinkedIn API"}},{"type":"Airtable","parameters":{"table":"Leads","fields":"{{$json}}"}}]}

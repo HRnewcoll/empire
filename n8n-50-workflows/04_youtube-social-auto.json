@@ -1,0 +1,34 @@
+{
+  "name": "YouTube to Social Media",
+  "trigger": "YouTube",
+  "actions": ["Twitter", "LinkedIn", "Facebook"],
+  "description": "Auto-post new YouTube videos to all social platforms",
+  "price": "$9",
+  "nodes": [
+    {
+      "type": "YouTube Trigger",
+      "parameters": {
+        "channelId": "YOUR_CHANNEL_ID",
+        "pollInterval": 600
+      }
+    },
+    {
+      "type": "Twitter",
+      "parameters": {
+        "text": "New video: {{$json.title}} {{$json.url}}"
+      }
+    },
+    {
+      "type": "LinkedIn",
+      "parameters": {
+        "text": "New video: {{$json.title}} {{$json.url}}"
+      }
+    },
+    {
+      "type": "Facebook",
+      "parameters": {
+        "message": "New video: {{$json.title}} {{$json.url}}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"name":"Notion to Todoist","trigger":"Notion","actions":["Todoist"],"description":"Sync Notion tasks to Todoist","price":"$5","nodes":[{"type":"Notion Trigger","parameters":{"database":"YOUR_DB_ID"}},{"type":"Todoist","parameters":{"project":"Inbox","content":"{{$json.Name}}","due":"{{$json.Due}}"}}]}

@@ -1,0 +1,1 @@
+{"name":"Gumroad to Mailchimp","trigger":"Gumroad","actions":["Mailchimp"],"description":"Add Gumroad buyers to Mailchimp list","price":"$5","nodes":[{"type":"Webhook","parameters":{"path":"/gumroad"}},{"type":"Mailchimp","parameters":{"list":"YOUR_LIST_ID","email":"{{$json.email}}"}},{"type":"Tag","parameters":{"tag":"customer"}}]}

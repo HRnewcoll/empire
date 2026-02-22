@@ -1,0 +1,24 @@
+{
+  "name": "Reddit to Slack Monitor",
+  "trigger": "Reddit",
+  "actions": ["Slack"],
+  "description": "Monitor Reddit posts for keywords and notify Slack",
+  "price": "$5",
+  "nodes": [
+    {
+      "type": "Reddit Trigger",
+      "parameters": {
+        "subreddit": "all",
+        "search": "keyword",
+        "pollInterval": 600
+      }
+    },
+    {
+      "type": "Slack",
+      "parameters": {
+        "channel": "#alerts",
+        "message": "Reddit post: {{$json.title}}"
+      }
+    }
+  ]
+}
